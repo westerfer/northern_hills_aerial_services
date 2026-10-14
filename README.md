@@ -93,6 +93,20 @@ composer.json     Dependencies
 Composer-managed code (`vendor/`, `web/core/`, contrib modules and themes)
 and scaffold files are not committed. `composer install` restores them.
 
+### Front-end libraries
+
+JavaScript libraries that modules expect in `web/libraries/` are installed by
+Composer as `drupal-library` packages declared in the `repositories` section
+of `composer.json`:
+
+| Library | Used by | Source |
+| --- | --- | --- |
+| lazySizes 5.3.2 (`afarkas/lazysizes`) | Lazy-load | npm tarball |
+
+To upgrade one, change its `version` and `dist` (`url` and `shasum`, from
+`https://registry.npmjs.org/<name>/latest`) in `composer.json`, then run
+`ddev composer update <package>`.
+
 ## Hosting
 
 The site is set up for local development only so far. When a host is chosen,

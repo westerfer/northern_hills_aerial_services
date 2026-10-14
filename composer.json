@@ -12,9 +12,23 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "afarkas/lazysizes",
+                "version": "5.3.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://registry.npmjs.org/lazysizes/-/lazysizes-5.3.2.tgz",
+                    "type": "tar",
+                    "shasum": "27f974c26f5fcc33e7db765c0f4930488c8a2984"
+                }
+            }
         }
     ],
     "require": {
+        "afarkas/lazysizes": "^5.3",
         "composer/installers": "^2.3",
         "drupal/admin_toolbar": "^3.6",
         "drupal/core-composer-scaffold": "^11.4",
@@ -23,6 +37,7 @@
         "drupal/core-recommended": "^11.4",
         "drupal/diff": "^2.1",
         "drupal/field_group": "^4.0",
+        "drupal/lazy": "^4.0",
         "drupal/metatag": "^2.2",
         "drupal/pathauto": "^1.15",
         "drupal/redirect": "^1.13",
