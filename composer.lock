@@ -4,18 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50ff5bc98c1523efdb3b412a96d6eb94",
+    "content-hash": "f5b9b7ed419efb6a21589863defed901",
     "packages": [
-        {
-            "name": "afarkas/lazysizes",
-            "version": "5.3.2",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/lazysizes/-/lazysizes-5.3.2.tgz",
-                "shasum": "27f974c26f5fcc33e7db765c0f4930488c8a2984"
-            },
-            "type": "drupal-library"
-        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.4.0",
@@ -1787,64 +1777,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
-            }
-        },
-        {
-            "name": "drupal/lazy",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/lazy.git",
-                "reference": "4.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lazy-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "691a753b3c5f06f1e9558999e5c854565b67de12"
-            },
-            "require": {
-                "drupal/core": "^10 || ^11",
-                "ext-json": "*"
-            },
-            "suggest": {
-                "bower-asset/lazysizes": "Lazysizes is a required library for the Lazy module. Must be installed to '/libraries/lazysizes' folder."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1720363936",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Osman Gormus",
-                    "homepage": "https://www.drupal.org/u/osman",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "This module enables lazy-loading images and iframes via text-filters and image-fields. Requires lazysizes library.",
-            "homepage": "https://www.drupal.org/project/lazy",
-            "keywords": [
-                "Drupal",
-                "Lazy-load",
-                "bLazy",
-                "lazy",
-                "lazyload",
-                "performance"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/lazy",
-                "issues": "https://www.drupal.org/project/issues/lazy"
             }
         },
         {
