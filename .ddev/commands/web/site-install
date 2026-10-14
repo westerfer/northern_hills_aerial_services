@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Description: Install Drupal from the committed configuration in config/sync.
+## Usage: site-install
+## Example: "ddev site-install"
+
+set -euo pipefail
+
+composer install --no-interaction
+drush site:install --existing-config --account-name=admin -y
+drush cache:rebuild
+drush user:login --uri="${DDEV_PRIMARY_URL}"

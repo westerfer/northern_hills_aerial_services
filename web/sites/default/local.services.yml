@@ -1,0 +1,19 @@
+# Local development service overrides, loaded by settings.local.php.
+#
+# Parameter arrays are shallow-merged, so the whole twig.config array is
+# repeated here from default.services.yml.
+parameters:
+  twig.config:
+    # Wrap templates in HTML comments showing template suggestions, and enable
+    # the dump() function.
+    debug: true
+    # Recompile templates whenever their source changes.
+    auto_reload: true
+    # Do not cache compiled templates.
+    cache: false
+    allowed_file_extensions:
+      - css
+      - html
+      - js
+      - svg
+      - twig

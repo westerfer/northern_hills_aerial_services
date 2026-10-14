@@ -1,65 +1,59 @@
-# gitignore template for Drupal 8 projects
-#
-# earlier versions of Drupal are tracked in `community/PHP/`
-#
-# follows official upstream conventions:
+# Drupal 11 + DDEV project
 # https://www.drupal.org/docs/develop/using-composer
 
-# Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+# Composer-managed dependencies (restored with "ddev composer install").
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/drush/Commands/contrib/
 
-# Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+# Site settings. settings.php is committed; it contains no secrets and loads
+# the files below. Local and DDEV-generated settings stay out of git.
+/web/sites/*/settings.local.php
+/web/sites/*/settings.ddev.php
+/web/sites/*/default.settings.php
+/web/sites/*/default.services.yml
 
-# Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+# User-generated and temporary files.
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/translations/
+/web/sites/*/tmp/
+/web/sites/*/cache/
+/private/
 
-# Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
-/web/modules/README.txt
-/web/modules/contrib
-/web/profiles/README.txt
-/web/profiles/contrib
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
-/web/sites/README.txt
-/web/themes/README.txt
-/web/themes/contrib
+# Files placed by drupal/core-composer-scaffold on every "composer install".
 /web/.csslintrc
-/web/.editorconfig
 /web/.eslintignore
 /web/.eslintrc.json
-/web/.gitattributes
-/web/.htaccess
 /web/.ht.router.php
+/web/.htaccess
+/web/INSTALL.txt
+/web/README.md
 /web/autoload.php
-/web/composer.json
-/web/composer.lock
+/web/autoload_runtime.php
 /web/example.gitignore
 /web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
 /web/robots.txt
 /web/update.php
 /web/web.config
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/themes/README.txt
+/web/sites/README.txt
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
 
-# Ignore vendor dependencies and scripts
-/vendor
-/composer.phar
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
+# Database dumps and archives.
+*.sql
+*.sql.gz
+*.tar.gz
+
+# OS / editor noise.
+.DS_Store
+.idea/
+.vscode/
