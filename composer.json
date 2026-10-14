@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^11.4",
         "drupal/diff": "^2.1",
         "drupal/field_group": "^4.0",
+        "drupal/webform": "^6.3",
         "drush/drush": "^13.8"
     },
     "conflict": {
