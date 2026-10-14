@@ -52,6 +52,7 @@
 *.sql
 *.sql.gz
 *.tar.gz
+!initial_project_startup_db.sql.gz
 
 # OS / editor noise.
 .DS_Store
