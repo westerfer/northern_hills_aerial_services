@@ -8,7 +8,7 @@ Company website for Northern Hills Aerial Services, built on **Drupal 11**
 | --- | --- |
 | Drupal core | 11.4.9 (`drupal/core-recommended` ^11.4) |
 | Drush | 13.8 |
-| PHP | 8.3 |
+| PHP | 8.5 |
 | Database | MariaDB 10.11 |
 | Web server | nginx-fpm |
 | Node.js | 22 |
@@ -16,7 +16,7 @@ Company website for Northern Hills Aerial Services, built on **Drupal 11**
 ## Prerequisites (macOS)
 
 1. [OrbStack](https://orbstack.dev/) — install it and start it once.
-2. DDEV and mkcert:
+2. DDEV (v1.24.10 or newer, for PHP 8.5) and mkcert:
    ```sh
    brew install ddev/ddev/ddev
    mkcert -install
